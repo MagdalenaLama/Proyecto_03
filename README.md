@@ -1,6 +1,6 @@
 # Proyecto 3:Landing de Negocio
 
-Tercer proyecto donde se realizará un sitio web personalizado con HTML y
+Tercer proyecto donde se realizará un sitio web personalizado con HTML . El contenido se encuentra en la carpeta .vscode
 
 ## Índice
 1. Objetivos de Aprendizaje
