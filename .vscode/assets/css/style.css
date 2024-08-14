@@ -1,0 +1,190 @@
+
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+body{
+    background-color: pink;
+  
+}
+.container{
+   
+    height: fit-content;
+    display: grid;
+    grid-template-columns: 100vw ;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: 
+    "a"
+    "b"
+    "c"
+    "d";
+    
+}
+/* Nav-Bar */
+.nav-bar{
+    display: flex;
+    height: 100px;
+    width: 100%;
+    background-color:var(--color-background);
+    justify-content:space-between;
+    align-items: center;
+    padding: 10px;
+    grid-area: a;
+
+}
+
+.logo{
+    background-image:url(https://i.postimg.cc/Dw33KH2d/Logo.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 200px;
+    height: 200px;
+    margin-top: 120px;
+    z-index: 12;
+    border-radius: 50%;
+    position: relative;
+    
+}
+
+.logo>p{
+    color: var(--color-enlaces-detalles);
+    font-size: 40pt;
+    position: absolute;
+    top: 10px;
+    left: 200px;
+   
+}
+
+
+
+nav a{
+    padding: 0 10px;
+    color: var(--color-text);
+    text-decoration: none;
+    margin: 0 0 0 3px;
+    font-size: 18pt;
+}
+
+a:hover{
+    color: var(--color-enlaces-detalles);
+}
+
+/*Hero Section*/
+.hero-section{
+    height: 100vh;
+    width: auto;
+    background-color: var(--color-background);
+    grid-area: b;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+.hero-section-form{
+    width: auto;
+    height: auto;
+    background-color: #F0F0D8;
+    font-size: 60px;
+    color: var(--color-text);
+    align-content: center;
+    text-align: center;
+}
+input{
+    margin: 50px;
+    padding: 10px 100px;
+    background-color:#EBE7CC;
+}
+
+.hero-section-img {
+    width: auto;
+    background-color: var(--color-background);
+    margin: 0 auto;
+    align-content: center;
+}
+.hero-section-img img{
+    height: 65vh;
+    border-radius: 9%;
+    border-style: groove;
+}
+
+/*Products Section*/
+.product{
+    grid-area: c;
+    background-color: var(--color-background);
+    height: 550px;
+    display: flex;
+    height: 500px;
+    justify-content: space-between;
+    
+    
+}
+
+
+.product__card{
+    width: 24%;
+    box-shadow: 0px 1px 10px var(--color-secundario);
+    align-content: center;
+   
+}
+.product__card__text{
+    display: none;
+    text-align: center;
+    font-size: 3rem;
+    color: var(--color-enlaces-detalles);
+    background-color: var(--color-background);
+}
+.product__card:hover{
+    box-shadow: 0px 1px 10px rgba(0, 0 , 0, 0.4);
+    transform: translateY(-3%);
+    opacity: 0.5;
+    transition: 0.5s ease-in-out;
+}
+
+.product__card:hover .product__card__text{
+    display: block;
+}
+.red{
+    background-image: url(https://i.postimg.cc/htk9DKh8/red-wine.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.white{
+    background-image: url(https://i.postimg.cc/mkg9XD64/white-wine.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.accessories{
+    background-image: url(https://i.postimg.cc/4NMcPXvC/top-view-wine-bottle-utensils.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.glass{
+    background-image: url(https://i.postimg.cc/5yKCZVZC/wine-glass.jpg);
+    background-size: cover;
+    background-position: center;
+}
+/*Footer Section*/
+
+.footer{
+    grid-area: d;
+    background-color: #EBE7CC;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer >p{
+    text-align: end;
+    color: var(--color-text);
+    margin-right: 35px;
+
+}
+.bx{
+    color: var(--color-text);
+    font-size: 24pt;
+}
